@@ -5,19 +5,29 @@ import { Popover, Transition } from "@headlessui/react";
 
 import Logo from "../assets/logo-white.svg";
 
+
+
 const company = [
   {
-    name: "About",
+    name: "About Us",
     description: "Measure actions your users take",
     href: "##",
     icon: IconOne,
   },
   {
-    name: "Contact",
+    name: "Blog",
     description: "Create your own targeted content",
     href: "##",
     icon: IconOne,
   },
+  ,
+  {
+    name: "Contact Us",
+    description: "Create your own targeted content",
+    href: "##",
+    icon: IconOne,
+  }
+  
 ];
 
 const resources = [
@@ -43,7 +53,7 @@ const resources = [
 
 const navigation = [
   { id: 1, name: "Home", href: "#", current: true, items: null },
-  { id: 2, name: "Blog", href: "#", current: false, items: null },
+  { id: 2, name: "Products", href: "#", current: false, items: null },
   { id: 3, name: "Company", href: "#", current: false, items: company },
   { id: 4, name: "Resources", href: "#", current: false, items: resources },
 ];
@@ -64,7 +74,7 @@ function NavBar() {
       {/* Navigation */}
       <nav
         id="navbar"
-        className="absolute flex flex-wrap md:flex-nowrap w-full bg-slate-950 justify-between text-white items-center px-5 md:px-16 lg:px-32 py-5"
+        className="fixed flex flex-wrap md:flex-nowrap w-full shadow-lg bg-slate-950 justify-between text-white items-center px-5 md:px-16 lg:px-32 py-5 z-[100]"
       >
         <div className="md:hidden">
           <Bars3Icon className="text-white h-8 w-8" />
