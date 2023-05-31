@@ -13,36 +13,47 @@ function IconSection() {
 
   const divRef = useRef(null);
   const divRef_2 = useRef(null);
+  const divRef_3 = useRef(null);
 
   useEffect(() => {
     if (inView) {
+      divRef_3.current.classList.add("animate-slide-in-p-i");
       divRef.current.classList.add("animate-slide-in-l-r",);
       divRef_2.current.classList.add("animate-slide-in-r-l");
     } else {
+      divRef_3.current.classList.remove("animate-slide-in-p-i");
       divRef.current.classList.remove("animate-slide-in-l-r");
       divRef_2.current.classList.remove("animate-slide-in-r-l");
     }
   }, [inView]);
 
   return (
-    <div ref={ref} className="w-full h-fit lg:h-screen mx-auto px-5 md:px-16 lg:px-32 py-20 bg-slate-950">
-      <div className="h-full grid md:grid-cols-2 gap-12 items-center justify-center">
+    <div ref={ref} className="w-full h-fit lg:min-h-screen mx-auto px-5 md:px-16 lg:px-32 py-20 bg-slate-950 flex flex-col items-center justify-center gap-20">
+
       <div
+        ref={divRef_3}
+        className={classNames(" text-center transition-all", {
+          "opacity-0": !inView,
+        })}
+      >
+        <h2 className="text-3xl font-bold lg:text-4xl text-white">
+          Collaborative tools for enhanced user experience in financial tech solutions
+        </h2>
+        <p className="mt-3 text-gray-400">
+          We empower businesses to transform their digital landscape by providing comprehensive financial technology solutions that enable them to thrive.
+        </p>
+      </div>
+      <div className="h-full grid md:grid-cols-2 gap-12 items-center justify-center">
+
+
+        <div
           ref={divRef}
           className={classNames("flex flex-col gap-5 h-full", {
             "opacity-0": !inView,
           })}
         >
-          <div className="lg:w-3/4">
-            <h2 className="text-3xl font-bold lg:text-4xl text-white">
-            Collaborative tools for enhanced user experience in financial tech solutions
-            </h2>
-            <p className="mt-3 text-gray-400">
-            We empower businesses to transform their digital landscape by providing comprehensive financial technology solutions that enable them to thrive.
-            </p>
-          </div>
 
-          <div className="space-y-6 lg:space-y-10">
+          <div className="space-y-6 lg:space-y-10 h-full flex flex-col items-center justify-between">
             <div className="flex">
               <span className="flex-shrink-0 inline-flex justify-center items-center w-[46px] h-[46px] rounded-full border  shadow-sm mx-auto bg-slate-900 border-gray-700 text-gray-200">
                 <svg
@@ -59,10 +70,10 @@ function IconSection() {
               </span>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base sm:text-lg font-semibold text-gray-200">
-                Cutting-edge documentation
+                  Cutting-edge documentation
                 </h3>
                 <p className="mt-1 text-gray-600 dark:text-gray-400">
-                Our extensive documentation and client libraries provide businesses with the resources they need to swiftly implement custom integrations and accelerate development timelines.
+                  Our extensive documentation and client libraries provide businesses with the resources they need to swiftly implement custom integrations and accelerate development timelines.
                 </p>
               </div>
             </div>
@@ -83,10 +94,10 @@ function IconSection() {
               </span>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base sm:text-lg font-semibold text-gray-200">
-                Engaged developer community
+                  Engaged developer community
                 </h3>
                 <p className="mt-1 text-gray-600 dark:text-gray-400">
-                We actively support and contribute to the developer community through open-source projects, fostering collaboration and innovation.
+                  We actively support and contribute to the developer community through open-source projects, fostering collaboration and innovation.
                 </p>
               </div>
             </div>
@@ -107,15 +118,15 @@ function IconSection() {
               </span>
               <div className="ml-5 sm:ml-8">
                 <h3 className="text-base sm:text-lg font-semibold text-gray-200">
-                Streamlined and cost-effective
+                  Streamlined and cost-effective
                 </h3>
                 <p className="mt-1 text-gray-600 dark:text-gray-400">
-                Our solutions offer simplicity and affordability, enabling businesses to securely engage in capital trades and a wide range of financial transactions.
+                  Our solutions offer simplicity and affordability, enabling businesses to securely engage in capital trades and a wide range of financial transactions.
                 </p>
               </div>
             </div>
 
-        
+
           </div>
         </div>
 

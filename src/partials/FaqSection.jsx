@@ -33,7 +33,7 @@ const qt = [
 
 function FaqSection() {
   return (
-    <div className="w-full mx-auto px-5 md:px-16 lg:px-32 py-20 bg-slate-950">
+    <div className="w-full  mx-auto px-5 md:px-16 lg:px-32 py-20 bg-slate-950">
       <div className="w-full h-full grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 items-center">
         <div className="h-full">
 

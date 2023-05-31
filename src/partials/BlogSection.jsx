@@ -2,7 +2,7 @@ import React from "react";
 
 function BlogSection() {
   return (
-    <div className="w-full h-fit lg:h-screen mx-auto px-5 md:px-16 lg:px-32 py-20 bg-white">
+    <div className="w-full  mx-auto px-5 md:px-16 lg:px-32 py-20 bg-white">
       <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
         <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-slate-950">
           Capital Chronicles
@@ -45,8 +45,8 @@ function BlogSection() {
                 <path
                   d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
                   stroke="currentColor"
-                  stokeWidth="2"
-                  stroke-linecap="round"
+                  stokewidth="2"
+                  strokeLinecap="round"
                 />
               </svg>
             </p>
@@ -86,8 +86,8 @@ function BlogSection() {
                 <path
                   d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
                   stroke="currentColor"
-                  stokeWidth="2"
-                  stroke-linecap="round"
+                  stokewidth="2"
+                  strokeLinecap="round"
                 />
               </svg>
             </p>
@@ -127,8 +127,8 @@ function BlogSection() {
                 <path
                   d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
                   stroke="currentColor"
-                  stokeWidth="2"
-                  stroke-linecap="round"
+                  stokewidth="2"
+                  strokeLinecap="round"
                 />
               </svg>
             </p>
