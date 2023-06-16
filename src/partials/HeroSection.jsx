@@ -28,7 +28,7 @@ function HeroSection() {
   return (
     <div
       ref={ref}
-      className="w-full h-fit lg:min-h-screen mx-auto px-5 md:px-16 lg:px-32 py-20 bg-slate-950 flex items-center justify-center"
+      className="w-full h-fit lg:min-h-screen mx-auto px-5 md:px-16 lg:px-32 py-20 bg-slate-950 flex items-center justify-center "
     >
       <div className="w-full h-full grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 items-center ">
         <div
@@ -198,7 +198,7 @@ function HeroSection() {
         >
           <img
             className="h-full rounded-md object-cover"
-            src="https://images.unsplash.com/photo-1653634222025-5658e12782c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            src="https://images.unsplash.com/photo-1620228885847-9eab2a1adddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
             alt="Image Description"
           />
         </div>
