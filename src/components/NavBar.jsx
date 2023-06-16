@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { ChevronDownIcon, Bars3Icon } from "@heroicons/react/24/outline";
+import { ChevronDownIcon, Bars3Icon, InformationCircleIcon } from "@heroicons/react/24/outline";
 import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/solid";
 import { Popover, Transition } from "@headlessui/react";
 
@@ -22,7 +22,7 @@ const company = [
     name: "Contact Us",
     description: "Get in touch with us to learn more or to make a suggestion.",
     href: "/contact-us",
-    icon: IconOne,
+    icon: IconTwo,
   },
 ];
 
@@ -276,7 +276,7 @@ function NavigationItem({ item, activeItem, onItemClick }) {
                           className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-slate-900 focus:outline-none focus-visible:ring focus-visible:ring-blue-600 focus-visible:ring-opacity-50"
                         >
                           <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                            <sub.icon aria-hidden="true" />
+                            <sub.icon/>
                           </div>
                           <div className="ml-4">
                             <p className="text-sm font-medium text-blue-600">
@@ -306,24 +306,16 @@ function NavigationItem({ item, activeItem, onItemClick }) {
   );
 }
 
-function IconOne(props) {
+function IconOne() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      {...props}
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M19 9l-7 7-7-7"
-      />
-    </svg>
+    <InformationCircleIcon className="w-10 h-10"/>
   );
 }
 
+
+function IconTwo() {
+  return (
+    <ChatBubbleLeftRightIcon className="w-10 h-10"/>
+  );
+}
 export default NavBar;
