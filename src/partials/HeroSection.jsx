@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import classNames from "classnames";
-
+import { Link, NavLink } from "react-router-dom";
 import ImageOne from "../assets/hero_image_one.svg";
 
 function HeroSection() {
@@ -49,9 +49,9 @@ function HeroSection() {
           </p>
 
           <div className="mt-7 grid gap-3 w-full sm:inline-flex">
-            <a
+            <NavLink
               className="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 transition py-3 px-4 focus:ring-offset-gray-800"
-              href="#"
+              to="/contact-us"
             >
               Get started
               <svg
@@ -68,15 +68,9 @@ function HeroSection() {
                   strokeLinecap="round"
                 />
               </svg>
-            </a>
-            <a
-              className="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border hover:border-gray-300 shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2  transition py-3 px-4 border-gray-800 ver:border-gray-600 shadow-slate-700/[.7] text-white focus:ring-gray-700 focus:ring-offset-gray-800"
-              href="#"
-            >
-              Contact sales team
-            </a>
-          </div>
+            </NavLink>
 
+          </div>
           <div className="mt-6 lg:mt-10 grid grid-cols-2 gap-x-5">
             <div className="py-5">
               <div className="flex space-x-1">
@@ -188,6 +182,7 @@ function HeroSection() {
               </div>
             </div>
           </div>
+
         </div>
 
         <div
