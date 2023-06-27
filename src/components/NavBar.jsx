@@ -91,10 +91,9 @@ const [closeNav, setCloseNav] = useState(true);
 
 
 
-
-          <div className="flex items-center">
+          <NavLink to="/" className="flex items-center">
             <img src={Logo} alt="" className="h-8 w-8" />
-          </div>
+          </NavLink>
 
           <div className="sm:ml-6 hidden md:block mt-4 md:mt-0">
             <div className="flex flex-wrap md:flex-nowrap space-x-4">
